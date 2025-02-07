@@ -31,8 +31,7 @@ function PokemonList() {
         : pokemons;
 
     return (
-        <div>
-            <h2>Lista Pokémon</h2>
+        <div className="pokemon-list-container">
 
             {/* Barra di ricerca */}
             <input
@@ -43,17 +42,17 @@ function PokemonList() {
             />
 
             {/* Mostriamo SOLO i Pokémon filtrati o tutti se la ricerca è vuota */}
-            <ul>
+            <div className="pokemon-list">
                 {filteredPokemons.map((pokemon) => (
-                    <li key={pokemon.entry_number}>
+                    <div key={pokemon.entry_number} className="pokemon-item">
                         <img
                             src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemon.entry_number}.png`}
                             alt={pokemon.pokemon_species.name}
                         />
                         <p>{pokemon.pokemon_species.name}</p>
-                    </li>
+                    </div>
                 ))}
-            </ul>
+            </div>
         </div>
     );
 }
