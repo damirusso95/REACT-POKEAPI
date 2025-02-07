@@ -5,6 +5,9 @@ function PokemonList() {
     // variabile di stato per memorizzare i pokemon
     const [pokemons, setPokemons] = useState([]);
 
+    // variabile di stato per la ricerca per nome
+    const [serchName, setSerchName] = useState('');
+
     // funzione per API
     useEffect(() => {
 
@@ -24,6 +27,11 @@ function PokemonList() {
     return (
         <div>
             <h2>Lista Pokémon</h2>
+
+            {/* input per la ricerca nome */}
+            <input type="text" placeholder="Cerca un Pokemon..." value={serchName} onClick={setSerchName} />
+
+
             <ul>
                 {pokemons.map((pokemon) => (
                     <li key={pokemon.entry_number}>
