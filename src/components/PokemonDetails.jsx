@@ -1,6 +1,6 @@
 import React from 'react';
 
-function PokemonDetail() {
+function PokemonDetails() {
     return (
         <div className="pokemon-detail">
             <h1>Dettagli del Pokémon</h1>
@@ -9,4 +9,4 @@ function PokemonDetail() {
     );
 }
 
-export default PokemonDetail;
+export default PokemonDetails;

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom"; // Importa Link
 
 function PokemonList() {
     // variabile di stato per memorizzare i pokemon
@@ -50,6 +51,9 @@ function PokemonList() {
                             alt={pokemon.pokemon_species.name}
                         />
                         <p>{pokemon.pokemon_species.name}</p>
+                        <p>
+                            <Link to={`/pokemon/${pokemon.pokemon_species.name}`}> Scheda</Link>
+                        </p>
                     </div>
                 ))}
             </div>
