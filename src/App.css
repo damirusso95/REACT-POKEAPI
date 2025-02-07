@@ -1,5 +1,5 @@
 body {
-  background-color: #f2f2f2;
+  background-color: #e2e2e2;
   font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
@@ -65,14 +65,81 @@ input[type="text"] {
 
 
 .pokemon-item p {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: bold;
   color: #3498db;
   margin: 0;
 }
 
 .pokemon-item:hover p {
-  color: #123b56;
+  color:goldenrod;
   transform: scale(1.1);
   transition: transform 0.3s ease;
+}
+
+a{
+  text-decoration: none;
+  color:#3498db;
+  font-size: 1.2rem;
+}
+
+a:hover{
+  color: #1d5478;
+  transition: color 0.3s;
+}
+
+
+
+/* Stile per la card */
+.pokemon-detail-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center; 
+  max-width: 350px; 
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border-radius: 15px;
+  border: 2px solid #3498db;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+.pokemon-name {
+  font-size: 1.8rem;
+  color: #3498db;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.pokemon-img {
+  width: 120px; 
+  height: 120px;
+  border-radius: 8px;
+}
+
+.pokemon-info {
+  text-align: left;
+  padding: 10px;
+  width: 100%;
+}
+
+.pokemon-info h3 {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: #3498db;
+}
+
+.pokemon-info ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.pokemon-info li {
+  font-size: 1rem;
+  font-weight: bold;
+
+  color: #34495e;
+  margin: 5px 0;
 }
