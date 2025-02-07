@@ -1,5 +1,7 @@
 
 import './App.css'
+import React from 'react'
+import Home from './components/Home'
 
 function App() {
 
@@ -7,7 +9,7 @@ function App() {
   return (
     <>
     <div>
-    <h1>Pokedex</h1>
+    <Home />
 
     </div>
     </>
